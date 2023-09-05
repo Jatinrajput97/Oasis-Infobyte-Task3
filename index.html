@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Cantarell&family=Poppins&family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <form action="#" oninput="result.value=onInput(degree.value, fromScale.value, toScale.value)">
+       <h3>Converted from</h3>
+       <input type="number" id="degree" placeholder="Enter temperature" onkeypress="onlyNumbers(event)">
+       <select id="fromScale">
+        <option value="Celsius">°C</option>
+        <option value="Fahrenheit">°F</option>
+        <option value="Kelvin">K</option>
+       </select>
+       <h3>to</h3>
+       <select name="" id="toScale">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+       </select>
+       <h4>&#8681;</h4>
+       <output name="result" for="degree fromScale toScale"></output>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
